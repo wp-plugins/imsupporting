@@ -4,7 +4,7 @@ Donate link: http://IMsupporting.com
 Tags: live chat, live chat software, live chat button, live support button, live chat support, chat widget, chat tool, live chat widget, live chat tool, chat, chat support, instant chat, chat free, chat live, instant chat, chat plugin, live chat plugin
 Requires at least: 3.0.1
 Tested up to: 3.6.1
-Stable tag: 2.3
+Stable tag: 2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,9 +27,13 @@ The chat system uses ajax and jquery and relies on the IMsupporting chat cloud.
 == Installation ==
 
 1. Either let wordpress install, or download this .zip and unzip into your plugins directory.
+
 2. Activate the plugin through the 'Plugins' menu in WordPress.
+
 3. Click "Settings" on your dashboard and choose 'Imsupporting chat'
+
 4. Enter your SiteID from your IMsupporting.com account and choose your chat button (Or register for free at IMsupporting.com).
+
 5. Done Start chatting
 
 == Frequently Asked Questions ==
@@ -54,6 +58,9 @@ Need more help? Email support@imsupporting.com or simply visit imsupporting.com 
 
 
 == Changelog ==
+
+= 2.4 =
+* Added free for 3 months, pay with a tweet
 
 = 2.3 =
 * Easier installation screens and information. Simply get a chat account (free) and login to get your siteid.

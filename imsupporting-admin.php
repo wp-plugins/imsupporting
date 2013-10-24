@@ -25,6 +25,8 @@ function imsupporting_admin_html_page() {
     Your live chat &quot;SiteID&quot; will be visible in the Top Right hand corner of the chat console.
   </p></div>
 <p><a href="http://www.imsupporting.com/register_now.php" title="Register free" target="_blank">Get a live chat account FREE</a> or <a href="http://www.imsupporting.com/live-chat-login.php" title="Login to chat" target="_blank">Login and chat</a></p>
+<p><img src="http://i.imgur.com/SCxzBNd.png" alt="Free for 3 months" width="363" height="144" /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<iframe src="http://www.paywithatweet.com/dlbutton02.php?id=bf8fb73afcd2bd88b3729e15f8eb8e9e" name="paytweet_button2" width = "240px" height = "24px" scrolling="No" frameborder="no" id="paytweet_button2"></iframe></p>
 <div style="border:1px solid #A3FEA0; background:#E0FFD7"><form id="logintochat" name="logintochat" method="post" action="http://console.imsupporting.com/admin.php" target="_blank">
 <strong>Login to your live chat account</strong> ( <em>And chat to your visitors when they click a button from below</em> )<br />
   <input name="username" type="text" id="username" value="Username" maxlength="50" />
