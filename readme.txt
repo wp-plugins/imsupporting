@@ -1,32 +1,36 @@
 === Plugin Name ===
 Contributors: IMsupporting
 Donate link: http://IMsupporting.com
-Tags: live chat, live chat software, live chat button, live support button, live chat support
+Tags: live chat, live chat software, live chat button, live support button, live chat support, chat widget, chat tool, live chat widget, live chat tool, chat, chat support, instant chat, chat free, chat live, instant chat, chat plugin, live chat plugin
 Requires at least: 3.0.1
-Tested up to: 3.5.1
-Stable tag: 2.0
+Tested up to: 3.6.1
+Stable tag: 2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-IMsupporting live chat support rapid deployment plugin. Add a live chat button to your WordPress website quickly and easily.
+An easy to install live chat plugin for your wordpress site.
 
 == Description ==
 
-Quickly install a live chat button on your WordPress website by installing this plugin.
-An account on IMsupporting.com is required to be able to chat to your website visitors.
+Live chat is a great way to chat and interact with your website visitors.
 
-IMsupporting live chat is a fully featured cloud based live chat solution for business's. Live chat enables you to talk to your visitors in realtime.
+For more information, Check out <a href="www.imsupporting.com" target="_blank">Live chat</a>
 
-This plugin will allow you to raplidly deploy live chat on every page of your WordPress website.
+Simply install your plugin, enter your imsupporting ID and start chatting to your visitors!
+
+Customizable buttons and placements.
+
+The chat system uses ajax and jquery and relies on the IMsupporting chat cloud.
 
 
 
 == Installation ==
 
-1. Unzip IMS-WP-PLUGIN-LATEST.zip to `/wp-content/plugins/`
-2. Activate the plugin through the 'Plugins' menu in WordPress
+1. Either let wordpress install, or download this .zip and unzip into your plugins directory.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Click "Settings" on your dashboard and choose 'Imsupporting chat'
 4. Enter your SiteID from your IMsupporting.com account and choose your chat button.
+5. Done Start chatting
 
 == Frequently Asked Questions ==
 
@@ -40,15 +44,19 @@ No sorry, you will need to register for free.
 
 = Do you have a free trial? =
 
-Yes, Simply register at IMsupporting.com to start free.
+Yes, Simply register at IMsupporting.com to start free. ( you can even pay with a tweet )
 
 = Where is my "SiteID"? =
 
 Open your live chat console. Your SiteId is in the top right.
 
+Need more help? Email support@imsupporting.com or simply visit imsupporting.com and chat to us.
 
 
 == Changelog ==
+
+= 2.1 =
+* Updated documentation.
 
 = 2.0 =
 * Added new options and more buttons to choose from.
@@ -66,6 +74,4 @@ Inital Release.
 
 == Arbitrary section ==
 
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
+IMsupporting live chat software is a live chat tool for websites. You can install and use this on any wordpress website.
