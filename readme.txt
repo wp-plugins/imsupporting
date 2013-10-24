@@ -55,6 +55,9 @@ Need more help? Email support@imsupporting.com or simply visit imsupporting.com 
 
 == Changelog ==
 
+= 2.2 =
+* Updated Version header as it was missing
+
 = 2.1 =
 * Updated documentation.
 
