@@ -20,18 +20,54 @@ function imsupporting_admin_html_page() {
 <div>
 <h2>&nbsp;</h2>
 <h2>IMsupporting Live Chat Options &amp; Installation</h2>
+
+<?php
+// Display notice of they havent set a siteid.
+$workingsiteid = get_option('ims_siteid');
+if ($workingsiteid == "000000000") {
+
+echo '
 <div style="border:1px solid #FC0; background:#FFF5D5">
   <p style="color:#C00; font-size:18px;"><strong>Note:</strong> You will need a live chat account to get a &quot;SiteID&quot; , Simply register for <strong>FREE</strong> at <a href="http://www.IMsupporting.com" title="Live chat" target="_blank">IMsupporting.com</a> and login.<br />
     Your live chat &quot;SiteID&quot; will be visible in the Top Right hand corner of the chat console.
   </p></div>
+  
+  ';
+}
+?>
+  
+  
 <p><a href="http://www.imsupporting.com/register_now.php" title="Register free" target="_blank">Get a live chat account FREE</a> or <a href="http://www.imsupporting.com/live-chat-login.php" title="Login to chat" target="_blank">Login and chat</a></p>
-<p><img src="http://i.imgur.com/SCxzBNd.png" alt="Free for 3 months" width="363" height="144" /><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<iframe src="http://www.paywithatweet.com/dlbutton02.php?id=bf8fb73afcd2bd88b3729e15f8eb8e9e" name="paytweet_button2" width = "240px" height = "24px" scrolling="No" frameborder="no" id="paytweet_button2"></iframe></p>
+<p>
+<?php
+// Display notice of they havent set a siteid.
+$workingsiteid = get_option('ims_siteid');
+if ($workingsiteid == "000000000") {
+
+echo '
+<a href="http://www.imsupporting.com/register_now.php" target="_blank"><img src="http://i.imgur.com/P1qVV4X.png" alt="Welcome" width="623" height="171" border="0" /></a>
+
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+</p>
+<div style="border:1px solid #FC0; background:#FFF4BB;"><form id="registernow" name="registernow" method="post" action="http://www.imsupporting.com/register_action_mainpage.php" target="_blank">
+<strong>Register and get a SiteID </strong>( Free trial <strong>OR</strong> Pay with a Tweet and get the software completely FREE )<br />
+  <input name="username" type="text" id="username" value="Username" maxlength="50"  onclick="this.value=\'\';"/>
+  <label for="password"></label>
+  <input name="password" type="password" id="password" value="password" maxlength="50" onclick="this.value=\'\';" />
+  <input name="website" type="website" id="website" value="http:// website address" maxlength="50" onclick="this.value=\'\';" />
+  <input type="submit" name="submite" id="submite" value="Register Now" />
+</form>
+</div><br />
+<br />
+';
+
+?>
 <div style="border:1px solid #A3FEA0; background:#E0FFD7"><form id="logintochat" name="logintochat" method="post" action="http://console.imsupporting.com/admin.php" target="_blank">
 <strong>Login to your live chat account</strong> ( <em>And chat to your visitors when they click a button from below</em> )<br />
-  <input name="username" type="text" id="username" value="Username" maxlength="50" />
+  <input name="username" type="text" id="username" value="Username" maxlength="50" onclick="this.value='';" />
   <label for="password"></label>
-  <input name="password" type="password" id="password" value="password" maxlength="50" />
+  <input name="password" type="password" id="password" value="password" maxlength="50" onclick="this.value='';" />
   <input type="submit" name="submite" id="submite" value="Login to chat" />
 </form>
 </div>
@@ -48,7 +84,7 @@ function imsupporting_admin_html_page() {
 <th width="180" bgcolor="#F2F2F2" scope="row">Your SiteID</th>
 <td width="758" bgcolor="#F2F2F2"> <input name="ims_siteid" id="ims_siteid" type="text" value="<?php echo get_option('ims_siteid'); ?>" /> 
   (ex. &quot;123412345&quot;)<br />
-  <span style="font-size:12px;">This can be found in the Top Right of your chat console.</span></td>
+  <span style="font-size:12px;"><strong>This can be found in the Top Right of your chat console when logged in</strong>. ( Use the form above to login to the chat console )</span></td>
 </tr>
 <tr valign="top">
   <th bgcolor="#F2F2F2" scope="row">Button Position</th>

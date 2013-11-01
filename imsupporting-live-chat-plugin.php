@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: IMsupporting Live Chat for WordPress
+Plugin Name: Live Chat Software for WordPress by IMsupporting.com
 Plugin URI: http://www.IMsupporting.com
 Description: An easy to install live chat plugin for your wordpress site. Customize the live chat from the wordpress ( Settings > IMsupporting Chat) page.
-Version: 2.4
+Version: 2.5
 Author: IMsupporting
 Author URI: http://www.IMsupporting.com
 License: GPL
