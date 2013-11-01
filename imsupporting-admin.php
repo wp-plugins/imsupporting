@@ -29,11 +29,11 @@ if ($workingsiteid == "000000000") {
 echo '
 <div style="border:1px solid #FF3333; background:#FFD2D3;"><form id="registernow" name="registernow" method="post" action="http://www.imsupporting.com/register_action_mainpage.php" target="_blank">
 <strong>Register and get a SiteID </strong>( Free trial <strong>OR</strong> Pay with a Tweet and get the software completely FREE )<br />
-  <input name="username" type="text" id="username" value="Username" maxlength="50"  onclick="this.value=\'\';"/>
+  <input name="postusername" type="text" id="postusername" value="Username" maxlength="50"  onclick="this.value=\'\';"/>
   <label for="password"></label>
-  <input name="password" type="password" id="password" value="password" maxlength="50" onclick="this.value=\'\';" />
-  <input name="email" type="text" id="email" value="email address" maxlength="50" onclick="this.value=\'\';" />
-  <input name="website" type="text" id="website" value="http:// website address" maxlength="50" onclick="this.value=\'\';" />
+  <input name="postpassword" type="password" id="postpassword" value="password" maxlength="50" onclick="this.value=\'\';" />
+  <input name="postemail" type="text" id="postemail" value="email address" maxlength="50" onclick="this.value=\'\';" />
+  <input name="postwebsite" type="text" id="postwebsite" value="http:// website address" maxlength="50" onclick="this.value=\'\';" />
   <input type="submit" name="submite2" id="submite" value="Register Now" />
 </form>
 </div>
