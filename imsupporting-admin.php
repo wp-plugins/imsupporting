@@ -27,10 +27,15 @@ $workingsiteid = get_option('ims_siteid');
 if ($workingsiteid == "000000000") {
 
 echo '
-<div style="border:1px solid #FC0; background:#FFF5D5">
-  <p style="color:#C00; font-size:18px;"><strong>Note:</strong> You will need a live chat account to get a &quot;SiteID&quot; , Simply register for <strong>FREE</strong> at <a href="http://www.IMsupporting.com" title="Live chat" target="_blank">IMsupporting.com</a> and login.<br />
-    Your live chat &quot;SiteID&quot; will be visible in the Top Right hand corner of the chat console.
-  </p></div>
+<div style="border:1px solid #FC0; background:#FFF4BB;"><form id="registernow" name="registernow" method="post" action="http://www.imsupporting.com/register_action_mainpage.php" target="_blank">
+<strong>Register and get a SiteID </strong>( Free trial <strong>OR</strong> Pay with a Tweet and get the software completely FREE )<br />
+  <input name="username" type="text" id="username" value="Username" maxlength="50"  onclick="this.value=\'\';"/>
+  <label for="password"></label>
+  <input name="password" type="password" id="password" value="password" maxlength="50" onclick="this.value=\'\';" />
+  <input name="website" type="website" id="website" value="http:// website address" maxlength="50" onclick="this.value=\'\';" />
+  <input type="submit" name="submite" id="submite" value="Register Now" />
+</form>
+</div>
   
   ';
 }
@@ -50,18 +55,10 @@ echo '
 <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
 </p>
-<div style="border:1px solid #FC0; background:#FFF4BB;"><form id="registernow" name="registernow" method="post" action="http://www.imsupporting.com/register_action_mainpage.php" target="_blank">
-<strong>Register and get a SiteID </strong>( Free trial <strong>OR</strong> Pay with a Tweet and get the software completely FREE )<br />
-  <input name="username" type="text" id="username" value="Username" maxlength="50"  onclick="this.value=\'\';"/>
-  <label for="password"></label>
-  <input name="password" type="password" id="password" value="password" maxlength="50" onclick="this.value=\'\';" />
-  <input name="website" type="website" id="website" value="http:// website address" maxlength="50" onclick="this.value=\'\';" />
-  <input type="submit" name="submite" id="submite" value="Register Now" />
-</form>
-</div><br />
+<br />
 <br />
 ';
-
+}
 ?>
 <div style="border:1px solid #A3FEA0; background:#E0FFD7"><form id="logintochat" name="logintochat" method="post" action="http://console.imsupporting.com/admin.php" target="_blank">
 <strong>Login to your live chat account</strong> ( <em>And chat to your visitors when they click a button from below</em> )<br />
