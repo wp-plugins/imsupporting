@@ -2,8 +2,8 @@
 /*
 Plugin Name: IMsupporting Live Chat for WordPress
 Plugin URI: http://www.IMsupporting.com
-Description: Instant "OneClick" install of live chat into your website. Live chat software for any wordpress website. Add a live chat widget / plugin to your site with a single click!
-Version: 3.8.0.3
+Description: U;tra Easy Instant live chat software "OneCLICK" installation of live chat into your website. Live chat software for any wordpress website. Add a live chat widget / live chat plugin to your site with a single click!
+Version: 3.8.0.4
 Author: IMsupporting
 Author URI: http://www.IMsupporting.com
 License: GPL
@@ -54,6 +54,20 @@ delete_option('ims_fixed');
 delete_option('ims_username');
 delete_option('ims_password');
 }
+
+
+
+// Add settings link on plugin page ( Imsupportingchat is referenced in the admin page )
+function your_plugin_settings_link($links) { 
+  $settings_link = '<a href="options-general.php?page=imsupportingchat">Settings & Chat Dashboard</a>'; 
+  array_unshift($links, $settings_link); 
+  return $links; 
+}
+ 
+$plugin = plugin_basename(__FILE__); 
+add_filter("plugin_action_links_$plugin", 'your_plugin_settings_link' );
+
+
 
 
 // IMsupporting live chat software main display file.

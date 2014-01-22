@@ -71,8 +71,8 @@ if ($current_siteid == "000000000") {
                 // it worked!
                 // lets get the user ready..
         //      echo "Siteid = $oci_siteid . Username = $oci_username . MD5 = $oci_md5 . Password = $oci_password <br>";
-        echo "<h1>Congratulations!</h1><h2>Your account has been created for you!</h2><br>";
-echo "<b>To continue, Please click";?> <input type="submit" value="<?php _e('Save Changes') ?>" /><?php echo" to save your account and then click Login</b><br>";
+        echo "<h1>Congratulations!</h1><h2>A chat account has been created for you automatically!</h2><br>";
+echo "<b>(1) To continue, Please click >";?> <input type="submit" value="<?php _e('Save Changes') ?>" /><?php echo"< to save your account and then click Login on the next page</b><br>";
 echo "<br>For your records, <br>Your username is:\"$oci_username\"<br>Your password is:\"$oci_password\" <i>(We store this password as a Md5 hash and cannot be retrieved)</i>";
 echo "<br>Dont worry though, After clicking save changes, you will be able to OneClick login.<br><br><hr>";
 
@@ -100,10 +100,8 @@ echo "<h1>Welcome - Thats it! Everythings done. Please login to chat.</h1>";
 echo "Your account should already be setup now and you should have a unique SiteID below.<br>";
 echo "You shouldnt need to do anything else now. Simply click below to login , click Go Online and start chatting to your visitors";
 
-echo "<br><br><h3><a href=\"http://console.imsupporting.com/admin.php?method=get&username=$iusername&md5=$ipassword\" target=\"_BLANK\">Click here to login to your console</a></h3>";
+echo "<br><br><h2>(2) <a href=\"http://console.imsupporting.com/admin.php?method=get&username=$iusername&md5=$ipassword\" target=\"_BLANK\">Click here to login to your console</a></h2>";
 echo "Direct link: <a href=\"http://console.imsupporting.com/admin.php?method=get&username=$iusername&md5=$ipassword\">http://console.imsupporting.com/admin.php?method=get&username=$iusername&md5=$ipassword</a>";
-echo "<br><br><br>The settings below shouldnt need to be edited.";
-
 
 echo "<hr>";
 
@@ -124,7 +122,14 @@ $optsiteid = $oci_siteid;
 
 <table width="950" style="text-align:left;">
 
-<tr valign="top">
+  <tr valign="top">
+    <td colspan="2" bgcolor="#F2F2F2" scope="row"><strong>These settings below probably dont need to be changed.</strong></td>
+    </tr>
+  <tr valign="top">
+    <td bgcolor="#F2F2F2" scope="row">&nbsp;</td>
+    <td bgcolor="#F2F2F2">&nbsp;</td>
+  </tr>
+  <tr valign="top">
 <td width="180" bgcolor="#F2F2F2" scope="row">Your SiteID</td>
 <td width="758" bgcolor="#F2F2F2"> <input name="ims_siteid" id="ims_siteid" type="text" value="<?php echo $optsiteid; ?>" /> 
   (ex. &quot;123412345&quot;)<br />
