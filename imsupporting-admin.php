@@ -175,7 +175,7 @@ echo '<input type="hidden" name="ims_password" value="'.$oci_md5.'" />';
 }
 ?>
 <input type="hidden" name="action" value="update" />
-<input type="hidden" name="page_options" value="ims_siteid, ims_uploaded, ims_position, ims_leftcss, ims_topcss, ims_imageid, ims_username, ims_password" />
+<input type="hidden" name="page_options" value="ims_siteid, ims_uploaded, ims_position, ims_leftcss, ims_topcss, ims_username, ims_password" />
 
 <p>
 <input type="submit" value="<?php _e('Save Changes') ?>" />
