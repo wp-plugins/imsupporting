@@ -44,7 +44,7 @@ $imx = "1";
 if ($imx == "1") {
 ?>
 
-<div style="bottom:0px; position:fixed; right:10px; overflow:visible; text-align:right; line-height:0; z-index:100000" id="IMsupChat>
+<div style="bottom:0px; position:fixed; right:10px; overflow:visible; text-align:right; line-height:0; z-index:100000" id="IMsupChat">
 <script type="text/javascript" src="http://support1.imsupporting.com/welcome2/popup.js"></script>
 <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
 <!-- Hide script from older browsers
