@@ -1,6 +1,6 @@
 <?php
 // Main Chat Screen ( What this plugin will display to the clients users )
-add_action('init','ims_main');
+add_action('get_footer','ims_main');
 
 function ims_main()
 {
@@ -44,7 +44,7 @@ $imx = "1";
 if ($imx == "1") {
 ?>
 
-<div style="bottom:0px; position:fixed; right:10px; width:350px; text-align:right; z-index:1000" id="footerchat">
+<div style="bottom:0px; position:fixed; right:10px; overflow:visible; text-align:right; line-height:0; z-index:100000" id="IMsupChat>
 <script type="text/javascript" src="http://support1.imsupporting.com/welcome2/popup.js"></script>
 <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
 <!-- Hide script from older browsers

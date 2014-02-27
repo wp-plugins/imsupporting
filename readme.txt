@@ -4,7 +4,7 @@ Donate link: http://IMsupporting.com
 Tags: live chat, live chat software, live chat button, live support button, live chat support, chat widget, chat tool, live chat widget, live chat tool, chat, chat support, instant chat, chat free, chat live, instant chat, chat plugin, live chat plugin
 Requires at least: 3.0.1
 Tested up to: 3.8
-Stable tag: 3.8.0.4
+Stable tag: 3.8.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,9 @@ Yes, Once you have activated the live chat plugin, it will be live!
 
 
 == Changelog ==
+
+= 3.8.0.5 =
+* Fixed installation issues with users who have php sessions already started..
 
 = 3.8.0.4 =
 * Updated OneCLICK  installation. Live chat will now be instant. Added settings buttons to make it clearer to the user.
