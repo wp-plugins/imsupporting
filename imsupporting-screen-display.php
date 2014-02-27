@@ -42,6 +42,11 @@ $imx = "1";
 
 // Display the button..
 if ($imx == "1") {
+	
+	if ($ims_uploaded == "yes") {
+		$ims_imageid = $ims_siteid;
+	}
+	
 ?>
 
 <div style="bottom:0px; position:fixed; right:10px; overflow:visible; text-align:right; line-height:0; z-index:100000" id="IMsupChat">
@@ -52,7 +57,7 @@ var docref = "noref";
 if (document.referrer != '') {
 docref = document.referrer;
 }
-document.write('<a href="javascript:openSupport(\'<?php echo $ims_siteid; ?>\',\'Welcome\');"><img src="http://status.imsupporting.com/status.php?siteid=<?php echo $ims_siteid; ?>&amp;style=125&amp;docref='+docref+'" border="0" alt="live chat software" title="Launch live chat"/></a>');
+document.write('<a href="javascript:openSupport(\'<?php echo $ims_siteid; ?>\',\'Welcome\');"><img src="http://status.imsupporting.com/status.php?siteid=<?php echo $ims_siteid; ?>&amp;style=<?php echo $ims_imageid; ?>&amp;docref='+docref+'" border="0" alt="live chat software" title="Launch live chat"/></a>');
 //-- Stop hiding script -->
 </SCRIPT>
 <noscript><a href="http://www.imsupporting.com" title="Live chat software" target="_blank">Live Chat software</a></noscript>
