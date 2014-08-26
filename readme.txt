@@ -3,23 +3,23 @@ Contributors: IMsupporting
 Donate link: http://IMsupporting.com
 Tags: live chat, live chat software, live chat button, live support button, live chat support, chat widget, chat tool, live chat widget, live chat tool, chat, chat support, instant chat, chat free, chat live, instant chat, chat plugin, live chat plugin
 Requires at least: 3.0.1
-Tested up to: 3.8
-Stable tag: 3.8.0.9
+Tested up to: 3.9.2
+Stable tag: 3.8.0.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-OneCLICK Install Live Chat Software. A Live chat software plugin for your wordpress website. 
-Add live chat to your wordpress site instantly with our Oneclick live chat installation. Live chat software for any website.
+A Live chat software and live chat support plugin for your wordpress website. 
+Add live chat to your wordpress site instantly with our easy live chat software installation. Live chat software for any website.
 
 == Description ==
-<h1>Ultra easy OneCLICK Live chat software installation.</h1>
+<h1>Easy to use live chat software for your website.</h1>
 <p>
-Live chat software is a great tool to add to any website. With the IMsupporting "OneClick" live chat software installation you can have a live chat account, login to the live chat account and be chatting to your visitors within minutes!<br>
+Live chat software is a great tool to add to any website. With the IMsupporting live chat software you can have a live chat account, login to the live chat account and be chatting to your visitors within minutes!<br>
 Add live chat to your site today with our 100% FREE trial. Instant access and easy installation.
 
 For more information, Check out <a href="http://www.imsupporting.com" target="_blank">Live chat</a>
 
-IMsupporting OneCLICK live chat software. Install live chat with a single click of a button. Register for live chat, install and login to live chat all in one click.</p>
+Live chat can help increase sales and customer satisfaction by enabling you to chat to your website visitors!</p>
 
 
 
@@ -27,12 +27,13 @@ IMsupporting OneCLICK live chat software. Install live chat with a single click 
 
 1. Install the plugin into wordpress and activate it.
 
-2. Click "settings" and simply click "Save account"
+2. Click "settings" and follow the instructions.
 
-3. You now have a live chat account. Simply click login and start chatting.
+3. You now have a live chat account. Simply click login at IMsupporting.com and start chatting to your website visitors.
 
-The system will have already added the chat button to your site. All you need to do is login to the chat dashboard and click "Go Online".
-Our "OneCLICK" install will have created an account for you ready.
+
+You will need an Account ID, This can be found in your welcome email OR Contact our support team for assistance.
+
 
 
 == Frequently Asked Questions ==
@@ -49,9 +50,20 @@ No sorry, However, the system will create one for you as soon as you activate th
 
 Yes, Once you have activated the live chat plugin, it will be live!
 
+= How much does live chat cost? =
+
+After your completely free trial, You can choose one of our packages starting from £9.99 per month.
+
+= Can I change the colors of the chat window? =
+
+Yes, you can customise the chat window entirely. Add your own banners and change the text also.
+
 
 
 == Changelog ==
+
+= 3.8.0.10 =
+* Complete rework of the plugin.
 
 = 3.8.0.5 =
 * Fixed installation issues with users who have php sessions already started..
