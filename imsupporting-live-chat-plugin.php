@@ -2,8 +2,9 @@
 /*
 Plugin Name: Live Chat Software Plugin
 Plugin URI: http://www.IMsupporting.com
-Description: Live chat software / Live support software for your website.Live chat software for any wordpress website. Install live chat software into your website quickly with our free trial. Instant access and free support.
-Version: 3.8.0.10
+Description: Live chat software and live chat support plugin widget for your wordpress website. 
+Add live chat to your website instantly with our easy live chat software installation. Live chat software for any website. Our live chat tool works instantly and doesnt require any downloads to chat. Add cloud based live chat today.
+Version: 3.8.0.11
 Author: IMsupporting
 Author URI: http://www.IMsupporting.com
 License: GPL

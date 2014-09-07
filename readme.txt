@@ -1,15 +1,15 @@
 === Plugin Name ===
 Contributors: IMsupporting
 Donate link: http://IMsupporting.com
-Tags: live chat, live chat software, live chat button, live support button, live chat support, chat widget, chat tool, live chat widget, live chat tool, chat, chat support, instant chat, chat free, chat live, instant chat, chat plugin, live chat plugin
+Tags: live chat, live chat software, live support, live chat button, live support button, live chat support, chat widget, chat tool, live chat widget, live chat tool, chat, chat support, instant chat, chat free, chat live, instant chat, chat plugin, live chat plugin
 Requires at least: 3.0.1
-Tested up to: 3.9.2
-Stable tag: 3.8.0.10
+Tested up to: 4.0
+Stable tag: 3.8.0.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A Live chat software and live chat support plugin for your wordpress website. 
-Add live chat to your wordpress site instantly with our easy live chat software installation. Live chat software for any website.
+Live chat software and live chat support plugin widget for your wordpress website. 
+Add live chat to your website instantly with our easy live chat software installation. Live chat software for any website. Our live chat tool works instantly and doesnt require any downloads to chat. Add cloud based live chat today.
 
 == Description ==
 <h1>Easy to use live chat software for your website.</h1>
@@ -61,6 +61,9 @@ Yes, you can customise the chat window entirely. Add your own banners and change
 
 
 == Changelog ==
+
+= 3.8.0.11 =
+* Tested for Wordpress V4.0 - Live chat works as expected.
 
 = 3.8.0.10 =
 * Complete rework of the plugin.
