@@ -21,7 +21,7 @@ function imsupporting_admin_html_page() {
 <div>
 <form method="post" action="options.php">
 
-<h2><img src="http://www.imsupporting.com/wp-content/uploads/2014/09/live-chat-software-293x951.png" alt="IMsupporting Live Chat" /></h2>
+<h2><img src="http://www.imsupporting.com/wp-content/uploads/2014/09/live-chat-logo-png.png" alt="IMsupporting Live Chat" /></h2>
 <hr>
 <p>
   <?php
