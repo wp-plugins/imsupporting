@@ -26,27 +26,87 @@ function imsupporting_admin_html_page() {
 <hr>
 <p>
   <?php
-$optsiteid = get_option('ims_siteid');
+$optsiteid = get_option('ims_siteid'); // 000000000 = not active yet
 $ims_imageid = get_option('ims_imageid');
 
 
 
 ?>
 </p>
-<p><a href="http://www.imsupporting.com/live-chat-plugin-word-press-registration/" target="_blank"><img src="http://i.imgur.com/9SNwYDD.png" width="267" height="72" border="0" /></a><br />
-  <a href="http://www.imsupporting.com/live-chat-plugin-word-press-registration/" target="_blank">Get your chat account now</a></p>
-<p><img src="http://i.imgur.com/DyTvkOO.png" width="267" height="72" /><br />
-  <strong>Site/Account ID</strong>:
-  <input name="ims_siteid" id="ims_siteid" type="text" value="<?php echo $optsiteid; ?>" />
-  <em>( Example: 12343211234 )</em><br />
-    <br />
-    <span style="color:#900;">Your account ID can be found in your welcome email.</span><br />
-    <strong>Need help?</strong> <a href="http://www.imsupporting.com/contact/" target="_blank">Contact Us </a></p>
-<p><a href="http://www.imsupporting.com/login/" target="_blank">Login to your live chat account and manage your chats!</a></p>
+<p>
+<?php
+if ($optsiteid == "") {
+	
+	echo '
+<br /><a href="dsfgdsfgsdfg.com" style="-moz-box-shadow:inset 0px 1px 0px 0px #9acc85;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #9acc85;
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #74ad5a), color-stop(1, #68a54b));
+	background:-moz-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-webkit-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-o-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-ms-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#74ad5a\', endColorstr=\'#68a54b\',GradientType=0);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:20px 30px;
+	text-decoration:none;">Step1 : Get An Account Now</a> ';
+}
+?>
+    
+  
+<a href="dsfgdsfgsdfg.com" style="-moz-box-shadow:inset 0px 1px 0px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #91b8b3;
+	box-shadow:inset 0px 1px 0px 0px #91b8b3;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+	background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+	background-color:#768d87;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:20px 30px;
+	text-decoration:none;">Login to your Chat Console Here</a></p>
+<p>&nbsp;</p>
+<p><strong>Enter Your Site/Account ID Here<br />
+  </strong>
+  <input style="border:1px solid #36C; width:300px; height:40px; font-size:20px;" name="ims_siteid" id="ims_siteid" type="text" value="<?php echo $optsiteid; ?>" />
+  <em><br />
+    </em><span style="color:#900;"><em>Your account ID can be found in your welcome email or in the Statistics and Info panel within live chat</em></span><br />
+</p>
 <p><input type="submit" value="<?php _e('Save Changes') ?>" /></p>
 <p>
   <?php wp_nonce_field('update-options'); ?>
-
+</p>
+<p><strong>Have a Question? Need some Help?</strong><br />
+  Contact us Below:<br /><!-- START IMsupporting.com Live support software, Live help software code -->
+<script type="text/javascript" src="http://support1.imsupporting.com/welcome2/popup.js"></script>
+<SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
+<!-- Hide script from older browsers
+var docref = "noref";
+if (document.referrer != '') {
+docref = document.referrer;
+}
+document.write('<a href="javascript:openSupport(\'1234567890\',\'Welcome\');"><img src="http://status.imsupporting.com/status.php?siteid=1234567890&amp;style=40&amp;docref='+docref+'" border="0" alt="live chat software" title="Launch live chat"/></a>');
+//-- Stop hiding script -->
+</SCRIPT>
+<noscript><a href="http://www.imsupporting.com" title="Live chat software" target="_blank">Contact Imsupporting Here</a></noscript>
+<!-- End IMsupporting Code -->
 </p>
 <hr />
 <br />
