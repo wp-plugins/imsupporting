@@ -35,10 +35,10 @@ $ims_imageid = get_option('ims_imageid');
 </p>
 <p>
 <?php
-if ($optsiteid == "") {
+if ($optsiteid == "000000000") {
 	
 	echo '
-<br /><a href="dsfgdsfgsdfg.com" style="-moz-box-shadow:inset 0px 1px 0px 0px #9acc85;
+<br /><a href="http://www.imsupporting.com/live-chat-plugin-word-press-registration/" target="_BLANK" style="-moz-box-shadow:inset 0px 1px 0px 0px #9acc85;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #9acc85;
 	box-shadow:inset 0px 1px 0px 0px #9acc85;
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #74ad5a), color-stop(1, #68a54b));
@@ -62,7 +62,7 @@ if ($optsiteid == "") {
 ?>
     
   
-<a href="dsfgdsfgsdfg.com" style="-moz-box-shadow:inset 0px 1px 0px 0px #91b8b3;
+<a href="http://www.imsupporting.com/login/" target="_blank" style="-moz-box-shadow:inset 0px 1px 0px 0px #91b8b3;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #91b8b3;
 	box-shadow:inset 0px 1px 0px 0px #91b8b3;
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
