@@ -21,8 +21,7 @@ function imsupporting_admin_html_page() {
 <div>
 <form method="post" action="options.php">
 
-<h2><img src="http://www.imsupporting.com/wp-content/uploads/2014/01/logo-text-glow4.png" alt="IMsupporting OneClick" /></h2>
-<h3>You are only a few steps away from chatting to your website visitors!</h3>
+<h2><img src="http://www.imsupporting.com/wp-content/uploads/2014/09/live-chat-software-293x951.png" alt="IMsupporting Live Chat" /></h2>
 <hr>
 <p>
   <?php
@@ -90,6 +89,8 @@ if ($optsiteid == "000000000") {
     </em><span style="color:#900;"><em>Your account ID can be found in your welcome email or in the Statistics and Info panel within live chat</em></span><br />
 </p>
 <p><input type="submit" value="<?php _e('Save Changes') ?>" /></p>
+<p>&nbsp;</p>
+<hr />
 <p>
   <?php wp_nonce_field('update-options'); ?>
 </p>
