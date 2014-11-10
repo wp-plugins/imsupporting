@@ -112,11 +112,11 @@ document.write('<a href="javascript:openSupport(\'1234567890\',\'Welcome\');"><i
 <br />
 <table width="100%" style="text-align:left;">
   <tr valign="top">
-  <th colspan="2" scope="row">Advanced Options</th>
+  <th colspan="2" scope="row" style="font-size:18px;">Advanced Options</th>
   </tr>
 <tr valign="top">
-  <td width="205" bgcolor="#F2F2F2" scope="row">Use Uploaded Button</td>
-  <td width="1214" bgcolor="#F2F2F2"><table width="136">
+  <td width="196" bgcolor="#FBFBFB" scope="row"><strong>Use Your Own Uploaded Buttons</strong></td>
+  <td width="1223" bgcolor="#FBFBFB"><table width="136">
     <tr>
       <td><label>
         <input type="radio" name="ims_uploaded" value="yes" id="ims_uploaded_0" <?php if (get_option('ims_uploaded') == "yes") { echo 'checked="checked"'; } ?> />
@@ -136,8 +136,8 @@ document.write('<a href="javascript:openSupport(\'1234567890\',\'Welcome\');"><i
   <td>&nbsp;</td>
 </tr>
 <tr valign="top">
-  <th bgcolor="#F2F2F2" scope="row">Button Type Override</th>
-  <td bgcolor="#F2F2F2"><input name="ims_imageid" id="ims_imageid" type="text" value="<?php echo $ims_imageid; ?>" /> 
+  <th bgcolor="#FBFBFB" scope="row">Button Type Override</th>
+  <td bgcolor="#FBFBFB"><input name="ims_imageid" id="ims_imageid" type="text" value="<?php echo $ims_imageid; ?>" /> 
    <span style="font-size:12px;">A different number equals a different button style<br />
    Click <a href="http://www.imsupporting.com/live-chat-software-features/live-chat-buttons/" target="_blank"><strong>HERE</strong></a> to view a selection of buttons and what code to enter above.</span></td>
 </tr>
@@ -146,8 +146,8 @@ document.write('<a href="javascript:openSupport(\'1234567890\',\'Welcome\');"><i
   <td>&nbsp;</td>
 </tr>
 <tr valign="top">
-  <th bgcolor="#F2F2F2" scope="row">Button position</th>
-  <td bgcolor="#F2F2F2"><table width="136">
+  <th bgcolor="#FBFBFB" scope="row">Button position</th>
+  <td bgcolor="#FBFBFB"><table width="136">
     <tr>
       <td><label>
         <input type="radio" name="ims_position" value="right" id="ims_position_0" <?php if (get_option('ims_position') == "right") { echo 'checked="checked"'; } ?> />
