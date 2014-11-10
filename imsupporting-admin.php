@@ -150,13 +150,13 @@ document.write('<a href="javascript:openSupport(\'1234567890\',\'Welcome\');"><i
   <td bgcolor="#F2F2F2"><table width="136">
     <tr>
       <td><label>
-        <input type="radio" name="ims_uploaded" value="right" id="ims_position0" <?php if (get_option('ims_position') == "right") { echo 'checked="checked"'; } ?> />
+        <input type="radio" name="ims_position" value="right" id="ims_position_0" <?php if (get_option('ims_position') == "right") { echo 'checked="checked"'; } ?> />
         Bottom Right
       </label></td>
     </tr>
     <tr>
       <td><label>
-        <input name="ims_uploaded" type="radio" id="ims_position1" value="left" <?php if (get_option('ims_position') == "left") { echo 'checked="checked"'; } ?> /> 
+        <input name="ims_position" type="radio" id="ims_position_1" value="left" <?php if (get_option('ims_position') == "left") { echo 'checked="checked"'; } ?> /> 
         Bottom Left
       </label></td>
     </tr>
