@@ -94,8 +94,7 @@ if ($optsiteid == "000000000") {
 <p>
   <?php wp_nonce_field('update-options'); ?>
 </p>
-<p><strong>Have a Question? Need some Help?</strong><br />
-  Contact us Below:<br /><!-- START IMsupporting.com Live support software, Live help software code -->
+<p><strong>Have a Question? Need some Help?</strong><br /><!-- START IMsupporting.com Live support software, Live help software code -->
 <script type="text/javascript" src="http://support1.imsupporting.com/welcome2/popup.js"></script>
 <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
 <!-- Hide script from older browsers
@@ -103,7 +102,7 @@ var docref = "noref";
 if (document.referrer != '') {
 docref = document.referrer;
 }
-document.write('<a href="javascript:openSupport(\'1234567890\',\'Welcome\');"><img src="http://status.imsupporting.com/status.php?siteid=1234567890&amp;style=40&amp;docref='+docref+'" border="0" alt="live chat software" title="Launch live chat"/></a>');
+document.write('<a href="javascript:openSupport(\'1234567890\',\'Welcome\');"><img src="http://status.imsupporting.com/status.php?siteid=1234567890&amp;style=35&amp;docref='+docref+'" border="0" alt="live chat software" title="Launch live chat"/></a>');
 //-- Stop hiding script -->
 </SCRIPT>
 <noscript><a href="http://www.imsupporting.com" title="Live chat software" target="_blank">Contact Imsupporting Here</a></noscript>
@@ -111,13 +110,13 @@ document.write('<a href="javascript:openSupport(\'1234567890\',\'Welcome\');"><i
 </p>
 <hr />
 <br />
-<table width="950" style="text-align:left;">
+<table width="100%" style="text-align:left;">
   <tr valign="top">
-  <th colspan="2" scope="row">Extra Settings - Normally no need to modify these</th>
+  <th colspan="2" scope="row">Advanced Options</th>
   </tr>
 <tr valign="top">
-  <td width="180" bgcolor="#F2F2F2" scope="row">Use Uploaded Button</td>
-  <td width="758" bgcolor="#F2F2F2"><table width="136">
+  <td width="205" bgcolor="#F2F2F2" scope="row">Use Uploaded Button</td>
+  <td width="1214" bgcolor="#F2F2F2"><table width="136">
     <tr>
       <td><label>
         <input type="radio" name="ims_uploaded" value="yes" id="ims_uploaded_0" <?php if (get_option('ims_uploaded') == "yes") { echo 'checked="checked"'; } ?> />
@@ -137,9 +136,35 @@ document.write('<a href="javascript:openSupport(\'1234567890\',\'Welcome\');"><i
   <td>&nbsp;</td>
 </tr>
 <tr valign="top">
-  <th scope="row">Button Type Override</th>
-  <td><input name="ims_imageid" id="ims_imageid" type="text" value="<?php echo $ims_imageid; ?>" /> 
-   <span style="font-size:12px;">A different number equals a different button style</span></td>
+  <th bgcolor="#F2F2F2" scope="row">Button Type Override</th>
+  <td bgcolor="#F2F2F2"><input name="ims_imageid" id="ims_imageid" type="text" value="<?php echo $ims_imageid; ?>" /> 
+   <span style="font-size:12px;">A different number equals a different button style<br />
+   Click <a href="http://www.imsupporting.com/live-chat-software-features/live-chat-buttons/" target="_blank"><strong>HERE</strong></a> to view a selection of buttons and what code to enter above.</span></td>
+</tr>
+<tr valign="top">
+  <th scope="row">&nbsp;</th>
+  <td>&nbsp;</td>
+</tr>
+<tr valign="top">
+  <th bgcolor="#F2F2F2" scope="row">Button position</th>
+  <td bgcolor="#F2F2F2"><table width="136">
+    <tr>
+      <td><label>
+        <input type="radio" name="ims_uploaded" value="right" id="ims_position0" <?php if (get_option('ims_position') == "right") { echo 'checked="checked"'; } ?> />
+        Bottom Right
+      </label></td>
+    </tr>
+    <tr>
+      <td><label>
+        <input name="ims_uploaded" type="radio" id="ims_position1" value="left" <?php if (get_option('ims_position') == "left") { echo 'checked="checked"'; } ?> /> 
+        Bottom Left
+      </label></td>
+    </tr>
+  </table></td>
+</tr>
+<tr valign="top">
+  <th scope="row">&nbsp;</th>
+  <td>&nbsp;</td>
 </tr>
 
 

@@ -10,7 +10,7 @@ $ims_leftcss    = get_option('ims_leftcss');
 $ims_topcss     = get_option('ims_topcss');
 $ims_position   = get_option('ims_position');
 $ims_uploaded   = get_option('ims_uploaded');
-$ims_fixed   	= get_option('ims_fixed');
+$ims_fixed      = get_option('ims_fixed');
 
 
 // Debugger
@@ -23,33 +23,35 @@ echo "Siteid = $ims_siteid , ImageId = $ims_imageid , LeftCSS = $ims_leftcss , T
 
 // Style
 if ($ims_position == "left") {
-	$ims_style = 'top:'.$ims_topcss.'px; left:0px; position:fixed; z-index:2000;';
+	// bottom left
+        $ims_style = 'bottom:0px; position:fixed; left:10px; overflow:visible; text-align:right; line-height:0; z-index:100000" id="IMsupChat"';
 }
 if ($ims_position == "right") {
-	$ims_style = 'top:'.$ims_topcss.'px; right:0px; position:fixed; z-index:2000;';
+	// bottom right
+        $ims_style = 'bottom:0px; position:fixed; right:10px; overflow:visible; text-align:right; line-height:0; z-index:100000" id="IMsupChat"';
 }
 if ($ims_position == "top") {
-	$ims_style = 'top:0px; left:'.$ims_leftcss.'px; position:fixed; z-index:2000;';
+        $ims_style = 'top:0px; left:'.$ims_leftcss.'px; position:fixed; z-index:2000;';
 }
 if ($ims_position == "bottom") {
-	$ims_style = 'bottom:0px; left:'.$ims_leftcss.'px; position:fixed; z-index:2000;';
+        $ims_style = 'bottom:0px; left:'.$ims_leftcss.'px; position:fixed; z-index:2000;';
 }
 
-
+//bottom:0px; position:fixed; right:10px; overflow:visible; text-align:right; line-height:0; z-index:100000" id="IMsupChat"
 
 // So we display the button.. Always set to 1
 $imx = "1";
 
 // Display the button..
 if ($imx == "1") {
-	
-	if ($ims_uploaded == "yes") {
-		$ims_imageid = $ims_siteid;
-	}
-	
+
+        if ($ims_uploaded == "yes") {
+                $ims_imageid = $ims_siteid;
+        }
+
 ?>
 
-<div style="bottom:0px; position:fixed; right:10px; overflow:visible; text-align:right; line-height:0; z-index:100000" id="IMsupChat">
+<div style="<?php echo $ims_style; ?>">
 <script type="text/javascript" src="http://support1.imsupporting.com/welcome2/popup.js"></script>
 <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
 <!-- Hide script from older browsers
