@@ -4,7 +4,7 @@ Donate link: http://IMsupporting.com
 Tags: live chat, live chat plugin, live chat software, live support, live chat button, live support button, live chat support, chat widget, chat tool, live chat widget, live chat tool, chat, chat support, instant chat, chat free, chat live, instant chat, chat plugin, live chat plugin
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 3.8.0.17
+Stable tag: 3.8.0.18
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,9 @@ Yes, you can customise the chat window entirely. Add your own banners and change
 
 
 == Changelog ==
+
+= 3.8.0.18 =
+* Settings page much easier to use.
 
 = 3.8.0.15 =
 * Tonnes more chat features.
