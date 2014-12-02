@@ -76,7 +76,7 @@ document.write('<a href="javascript:openSupport(\'<?php echo $ims_siteid; ?>\',\
 
 
 <?php 
-}} 
+}
 
 if ($ims_popup == "yes") {
 // Display timed popup code.... (yes|no)	
@@ -119,7 +119,7 @@ document.all.imsupportingchatpopup.style.visibility = 'visible';
 }}}
 </script>
 
-<div id="imsupportingchatpopup" style="width:<?php echo $ims_popupwidth; ?>px; height:<?php echo $ims_popupheight; ?>px; position:absolute; left:<?php echo $ims_popupleft; ?>px; top: <?php echo $ims_popuptop; ?>px; z-index:9999999; background:url(<?php echo $ims_popupimage; ?>) no-repeat;  text-align: center;"><br>
+<div id="imsupportingchatpopup" style="width:<?php echo $ims_popupwidth; ?>px; height:<?php echo $ims_popupheight; ?>px; position:absolute; left:<?php echo $ims_popupleft; ?>px; top: <?php echo $ims_popuptop; ?>px; z-index:9999999; background:url(<?php echo $ims_popupimage; ?>) no-repeat; visibility:hidden;  text-align: center;"><br>
 <script type="text/javascript" src="http://support1.imsupporting.com/welcome2/popup.js"></script>
 <a href="javascript:openSupport('<?php echo $ims_siteid; ?>','Welcome');"><br>
 <span style="text-align: center"></span><br />
@@ -133,6 +133,6 @@ document.all.imsupportingchatpopup.style.visibility = 'visible';
 <!-- End IMsupporting Chat Popup Code -->
 
 <?php	
-}
+}}
 ?>
 
