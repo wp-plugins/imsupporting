@@ -30,6 +30,16 @@ function imsupporting_admin_html_page() {
 $optsiteid = get_option('ims_siteid'); // 000000000 = not active yet
 $ims_imageid = get_option('ims_imageid');
 
+$ims_popup 		= get_option('ims_popup');
+$ims_popuptime 	= get_option('ims_popuptime');
+$ims_popupimage = get_option('ims_popupimage');
+$ims_popupbutton = get_option('ims_popupbutton');
+$ims_popupheight = get_option('ims_popupheight');
+$ims_popupwidth = get_option('ims_popupwidth');
+$ims_popuptop 	= get_option('ims_popuptop');
+$ims_popupleft 	= get_option('ims_popupleft');
+
+
 
 
 ?>
@@ -183,9 +193,82 @@ if ($optsiteid == "000000000") {
   <td>&nbsp;</td>
 </tr>
 <tr valign="top">
-  <th scope="row" style="font-size:20px;">Need some help?</th>
-  <td bgcolor="#E1EFFF">&nbsp;</td>
+  <th colspan="2" bgcolor="#E1EFFF" style="font-size:20px;" scope="row">Timed / Proactive Invite <em>( A timed popup requesting if the user would like a chat )</em></th>
+  </tr>
+<tr valign="top">
+  <th scope="row">&nbsp;</th>
+  <td>&nbsp;</td>
 </tr>
+<tr valign="top">
+  <th bgcolor="#FBFBFB" scope="row">Seconds Until Popup Request</th>
+  <td bgcolor="#FBFBFB"><input name="ims_popuptime" type="text" id="ims_popuptime" value="<?php echo $ims_popuptime; ?>" size="5" maxlength="5" />
+    Seconds</td>
+</tr>
+<tr valign="top">
+  <th bgcolor="#FFFFFF" scope="row">&nbsp;</th>
+  <td bgcolor="#FFFFFF">&nbsp;</td>
+</tr>
+<tr valign="top">
+  <th bgcolor="#FBFBFB" scope="row">Enable Popup Invite</th>
+  <td bgcolor="#FBFBFB"><label>
+        <input type="radio" name="ims_popup" value="yes" id="ims_popup_0" <?php if (get_option('ims_popup') == "yes") { echo 'checked="checked"'; } ?> />
+        Yes</label> <label>
+        <br />
+        <input name="ims_popup" type="radio" id="ims_popup_1" value="no" <?php if (get_option('ims_popup') == "no") { echo 'checked="checked"'; } ?> />
+        No</label></td>
+</tr>
+<tr valign="top">
+  <th scope="row">&nbsp;</th>
+  <td>&nbsp;</td>
+</tr>
+<tr valign="top">
+  <th bgcolor="#FBFBFB" scope="row">Popup CSS</th>
+  <td bgcolor="#FBFBFB"><table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td scope="col">Width ( In Pixels )</td>
+      <td scope="col"><input name="ims_popupwidth" type="text" id="ims_popupwidth" value="<?php echo $ims_popupwidth; ?>" size="15" maxlength="15" /></td>
+    </tr>
+    <tr>
+      <td>Height ( In Pixels )</td>
+      <td><input name="ims_popupheight" type="text" id="ims_popupheight" value="<?php echo $ims_popupheight; ?>" size="15" maxlength="15" /></td>
+    </tr>
+    <tr>
+      <td>Top ( In Pixels )</td>
+      <td><input name="ims_popupttop" type="text" id="ims_popupttop" value="<?php echo $ims_popupttop; ?>" size="15" maxlength="15" /></td>
+    </tr>
+    <tr>
+      <td>Left ( In Pixels )</td>
+      <td><input name="ims_popupleft" type="text" id="ims_popupleft" value="<?php echo $ims_popupleft; ?>" size="15" maxlength="15" /></td>
+    </tr>
+  </table></td>
+</tr>
+<tr valign="top">
+  <th scope="row">&nbsp;</th>
+  <td>&nbsp;</td>
+</tr>
+<tr valign="top">
+  <th bgcolor="#FBFBFB" scope="row">Popup Background Image</th>
+  <td bgcolor="#FBFBFB"><input name="ims_popupimage" type="text" id="ims_popupimage" value="<?php echo $ims_popupimage; ?>" size="75" maxlength="256" /></td>
+</tr>
+<tr valign="top">
+  <th scope="row">&nbsp;</th>
+  <td>&nbsp;</td>
+</tr>
+<tr valign="top">
+  <th bgcolor="#FBFBFB" scope="row">Popup Button Style Code</th>
+  <td bgcolor="#FBFBFB"><input name="ims_popupbutton" type="text" id="ims_popupbutton" value="<?php echo $ims_popupbutton; ?>" size="15" maxlength="99" /></td>
+</tr>
+<tr valign="top">
+  <th scope="row">&nbsp;</th>
+  <td>&nbsp;</td>
+</tr>
+<tr valign="top">
+  <th scope="row">&nbsp;</th>
+  <td>&nbsp;</td>
+</tr>
+<tr valign="top">
+  <th colspan="2" bgcolor="#E1EFFF" style="font-size:20px;" scope="row">Need some help?</th>
+  </tr>
 <tr valign="top">
   <th colspan="2" bgcolor="#FBFBFB" scope="row"><!-- START IMsupporting.com Live support software, Live help software code -->
 <script type="text/javascript" src="http://support1.imsupporting.com/welcome2/popup.js"></script>
@@ -202,9 +285,8 @@ document.write('<a href="javascript:openSupport(\'1234567890\',\'Welcome\');"><i
 <!-- End IMsupporting Code --></th>
   </tr>
 <tr valign="top">
-  <th scope="row">&nbsp;</th>
-  <td>&nbsp;</td>
-</tr>
+  <th colspan="2" scope="row"><a href="http://imsupporting.guidearama.com/reader/gettingstarted" target="_blank">Getting Started Guide</a></th>
+  </tr>
 <tr valign="top">
   <th scope="row">&nbsp;</th>
   <td>&nbsp;</td>

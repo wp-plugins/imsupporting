@@ -4,7 +4,7 @@ Plugin Name: Live Chat
 Plugin URI: http://www.IMsupporting.com
 Description: Live chat plugin and live chat software support plugin widget for your wordpress website. 
 Live chat plugin for your website. Add instantly with our easy to use live chat software installation. Live chat software for any website. Our live chat tool works instantly and doesnt require any downloads to chat. Add cloud based live chat today.
-Version: 3.8.0.18
+Version: 3.8.0.20
 Author: IMsupporting
 Author URI: http://www.IMsupporting.com
 License: GPL
@@ -42,6 +42,17 @@ add_option("ims_position", 'right', '', 'yes');
 add_option("ims_uploaded", 'no', '', 'yes');
 //
 add_option("ims_fixed", 'yes', '', 'yes'); // CSS fixed..
+
+// Proactive Popups.
+add_option("ims_popup", 'no', '', 'yes'); // Show a timed popup?
+add_option("ims_popuptime", '10', '', 'yes'); // Time in seconds. ( We add the 000's later )
+add_option("ims_popupimage", 'http://status.imsupporting.com/remotepopups/background0.png', '', 'yes'); // The background for the DIV
+add_option("ims_popupbutton", '34', '', 'yes'); // Button image
+add_option("ims_popupheight", '244', '', 'yes');
+add_option("ims_popupwidth", '344', '', 'yes');
+add_option("ims_popuptop", '200', '', 'yes');
+add_option("ims_popupleft", '300', '', 'yes');
+
 }
 
 function imsupporting_remove() {
@@ -55,6 +66,16 @@ delete_option('ims_uploaded');
 delete_option('ims_fixed');
 delete_option('ims_username');
 delete_option('ims_password');
+
+delete_option('ims_popup');
+delete_option('ims_popuptime');
+delete_option('ims_popupimage');
+delete_option('ims_popupbutton');
+delete_option('ims_popupheight');
+delete_option('ims_popupwidth');
+delete_option('ims_popuptop');
+delete_option('ims_popupleft');
+
 }
 
 
