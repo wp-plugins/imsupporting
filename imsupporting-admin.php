@@ -205,8 +205,8 @@ if ($optsiteid == "000000000") {
     Seconds</td>
 </tr>
 <tr valign="top">
-  <th bgcolor="#FFFFFF" scope="row">&nbsp;</th>
-  <td bgcolor="#FFFFFF">&nbsp;</td>
+  <th scope="row">&nbsp;</th>
+  <td>&nbsp;</td>
 </tr>
 <tr valign="top">
   <th bgcolor="#FBFBFB" scope="row">Enable Popup Invite</th>
@@ -234,7 +234,7 @@ if ($optsiteid == "000000000") {
     </tr>
     <tr>
       <td>Top ( In Pixels )</td>
-      <td><input name="ims_popupttop" type="text" id="ims_popupttop" value="<?php echo $ims_popupttop; ?>" size="15" maxlength="15" /></td>
+      <td><input name="ims_popuptop" type="text" id="ims_popuptop" value="<?php echo $ims_popuptop; ?>" size="15" maxlength="15" /></td>
     </tr>
     <tr>
       <td>Left ( In Pixels )</td>
