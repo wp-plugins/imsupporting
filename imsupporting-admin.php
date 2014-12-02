@@ -211,10 +211,10 @@ if ($optsiteid == "000000000") {
 <tr valign="top">
   <th bgcolor="#FBFBFB" scope="row">Enable Popup Invite</th>
   <td bgcolor="#FBFBFB"><label>
-        <input type="radio" name="ims_popup" value="yes" id="ims_popup_0" <?php if (get_option('$ims_popup') == "yes") { echo 'checked="checked"'; } ?> />
+        <input type="radio" name="ims_popup" value="yes" id="ims_popup_0" <?php if ($ims_popup == "yes") { echo 'checked="checked"'; } ?> />
         Yes</label> <label>
         <br />
-        <input name="ims_popup" type="radio" id="ims_popup_1" value="no" <?php if (get_option('$ims_popup') == "no") { echo 'checked="checked"'; } ?> />
+        <input name="ims_popup" type="radio" id="ims_popup_1" value="no" <?php if ($ims_popup == "no") { echo 'checked="checked"'; } ?> />
         No</label></td>
 </tr>
 <tr valign="top">
@@ -302,7 +302,9 @@ echo '<input type="hidden" name="ims_password" value="'.$oci_md5.'" />';
 }
 ?>
 <input type="hidden" name="action" value="update" />
-<input type="hidden" name="page_options" value="ims_siteid, ims_uploaded, ims_position, ims_leftcss, ims_topcss, ims_imageid, ims_username, ims_password" />
+<input type="hidden" name="page_options" value="ims_siteid, ims_uploaded, ims_position, ims_leftcss, ims_topcss, ims_imageid, ims_username, ims_password, ims_popup ,ims_popuptime, ims_popupimage, ims_popupbutton, ims_popupheight, ims_popupwidth, ims_popuptop, ims_popupleft" />
+
+
 
 <p>
 <input type="submit" style="-moz-box-shadow:inset 0px 1px 0px 0px #9acc85;
