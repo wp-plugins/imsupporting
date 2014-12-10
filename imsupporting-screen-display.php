@@ -124,7 +124,7 @@ document.all.imsupportingchatpopup.style.visibility = 'visible';
 <a href="javascript:openSupport('<?php echo $ims_siteid; ?>','Welcome');"><br>
 <span style="text-align: center"></span><br />
 <br />
-<img src="http://status.imsupporting.com/status.php?siteid=1234567890&style=<?php echo $ims_popupbutton; ?>" alt="Live chat" border="0" /></a>
+<img src="http://status.imsupporting.com/status.php?siteid=<?php echo $ims_siteid; ?>&style=<?php echo $ims_popupbutton; ?>" alt="Live chat" border="0" /></a>
 <noscript><a href="http://www.imsupporting.com" title="Live chat">Live Chat</a></noscript>
 <a href="javascript:hidesupdiv();"><br />
 <img src="http://status.imsupporting.com/remotepopups/closewindow.png" width="116" border="0" height="24"></a>
