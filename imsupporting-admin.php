@@ -17,16 +17,13 @@ add_options_page('IMsupporting Chat', 'IMsupporting Chat', 'administrator',
 
 function imsupporting_admin_html_page() {
 ?>
-
 <div>
 <form method="post" action="options.php">
 
 <h2><img src="http://www.imsupporting.com/wp-content/uploads/2014/09/live-chat-logo-png.png" alt="IMsupporting Live Chat" /></h2>
 <hr>
-<table width="100%" style="text-align:left;">
-  <tr valign="top">
-    <th height="72" colspan="2" style="font-size:20px;" scope="row"><p>
-      <?php
+<p>
+<?php
 $optsiteid = get_option('ims_siteid'); // 000000000 = not active yet
 $ims_imageid = get_option('ims_imageid');
 
@@ -38,14 +35,10 @@ $ims_popupheight = get_option('ims_popupheight');
 $ims_popupwidth = get_option('ims_popupwidth');
 $ims_popuptop 	= get_option('ims_popuptop');
 $ims_popupleft 	= get_option('ims_popupleft');
-
-
-
-
 ?>
-      </p>
-      <p>
-        <?php
+</p>
+<p>
+<?php
 if ($optsiteid == "000000000") {
 	
 	echo '
@@ -71,27 +64,7 @@ if ($optsiteid == "000000000") {
 	text-decoration:none;">Step1 : Get An Account Now</a> ';
 }
 ?>
-        <a href="http://www.imsupporting.com/login/" target="_blank" style="-moz-box-shadow:inset 0px 1px 0px 0px #91b8b3;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #91b8b3;
-	box-shadow:inset 0px 1px 0px 0px #91b8b3;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
-	background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
-	background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
-	background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
-	background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
-	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
-	background-color:#768d87;
-	border:1px solid #566963;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:arial;
-	font-size:13px;
-	font-weight:bold;
-	padding:20px 30px;
-	text-decoration:none;">Login to your Chat Console Here</a>
-        <input style="-moz-box-shadow:inset 0px 1px 0px 0px #9acc85;
+  <input style="-moz-box-shadow:inset 0px 1px 0px 0px #9acc85;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #9acc85;
 	box-shadow:inset 0px 1px 0px 0px #9acc85;
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #74ad5a), color-stop(1, #68a54b));
@@ -111,22 +84,48 @@ if ($optsiteid == "000000000") {
 	font-weight:bold;
 	padding:20px 30px;
 	text-decoration:none;" type="submit" value="<?php _e('Save Changes') ?>" />
-        <?php wp_nonce_field('update-options'); ?>
-        </p></th>
-  </tr>
-  <tr valign="top">
-    <th colspan="2" scope="row" style="font-size:20px;">&nbsp;</th>
-  </tr>
+  <a href="http://www.imsupporting.com/login/" target="_blank" style="-moz-box-shadow:inset 0px 1px 0px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #91b8b3;
+	box-shadow:inset 0px 1px 0px 0px #91b8b3;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+	background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+	background-color:#768d87;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+<?php if ($optsiteid == "000000000") {echo ' visibility:hidden;';}?>
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:20px 30px;
+	text-decoration:none;">Login to your Chat Console Here</a>
+<?php wp_nonce_field('update-options'); ?>
+</p>
+<p>&nbsp;</p>
+<table width="100%" style="text-align:left;" >
   <tr valign="top">
     <th colspan="2" bgcolor="#E1EFFF" style="font-size:20px;" scope="row"><strong>Please Enter Your Site/Account ID Here</strong></th>
   </tr>
   <tr valign="top">
     <th colspan="2" bgcolor="#FBFBFB" style="font-size:20px;" scope="row"><strong>
     </strong>
-      <input style="border:1px solid #36C; width:300px; height:35px; font-size:18px;" name="ims_siteid" id="ims_siteid" type="text" value="<?php echo $optsiteid; ?>" />
-      <em><br />
-      </em><span style="color:#900;"><em>Your account ID can be found in your welcome email or in the Statistics and Info panel within live chat</em></span></th>
+      <input style="border:1px solid #36C; width:170px; height:35px; font-size:18px;" name="ims_siteid" id="ims_siteid" type="text" value="<?php echo $optsiteid; ?>" />
+      <em><?php if ($optsiteid == "000000000") {echo ' [ <a href="http://www.imsupporting.com/live-chat-plugin-word-press-registration/" target="_blank">Click here to get an account</a> ] ';}?><br />
+      </em>
+      <?php if ($optsiteid == "000000000") {echo '<br><br><span style="color:#900;"><em>Your account ID can be found in your welcome email or in the Statistics and Info panel within live chat</em></span>';}?></th>
+      
   </tr>
+  </table>
+  
+
+  
+  <table width="100%" style="text-align:left; <?php if ($optsiteid == "000000000") {echo ' visibility:hidden;';}?>">
   <tr valign="top">
     <th colspan="2" scope="row" style="font-size:20px;">&nbsp;</th>
   </tr>
@@ -336,6 +335,6 @@ echo '<input type="hidden" name="ims_password" value="'.$oci_md5.'" />';
 
 
 <p>
-  <?php
+<?php
 }
 ?>

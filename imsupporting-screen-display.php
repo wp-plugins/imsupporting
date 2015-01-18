@@ -57,9 +57,7 @@ if ($imx == "1") {
         if ($ims_uploaded == "yes") {
                 $ims_imageid = $ims_siteid;
         }
-
 ?>
-
 <div style="<?php echo $ims_style; ?>">
 <script type="text/javascript" src="http://support1.imsupporting.com/welcome2/popup.js"></script>
 <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
@@ -73,17 +71,13 @@ document.write('<a href="javascript:openSupport(\'<?php echo $ims_siteid; ?>\',\
 </SCRIPT>
 <noscript><a href="http://www.imsupporting.com" title="Live chat software" target="_blank">Live Chat software</a></noscript>
 </div>
-
-
 <?php 
 }
 
 if ($ims_popup == "yes") {
 // Display timed popup code.... (yes|no)	
 ?>	
-	
 <!-- START IMsupporting.com Proactive Invite -->
-
 <script language=javascript type='text/javascript'>
 
 //---------------------------------------------------------------------------------------------
@@ -131,8 +125,6 @@ document.all.imsupportingchatpopup.style.visibility = 'visible';
 <br>
 </div>
 <!-- End IMsupporting Chat Popup Code -->
-
 <?php	
 }}
 ?>
-
