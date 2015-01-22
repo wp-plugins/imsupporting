@@ -59,17 +59,17 @@ if ($imx == "1") {
         }
 ?>
 <div style="<?php echo $ims_style; ?>">
-<script type="text/javascript" src="http://support1.imsupporting.com/welcome2/popup.js"></script>
+<script type="text/javascript" src="//support1.imsupporting.com/welcome2/popup.js"></script>
 <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
-<!-- Hide script from older browsers
+<!-- Hide script from older browsers - IMsupporting Plugin .28
 var docref = "noref";
 if (document.referrer != '') {
 docref = document.referrer;
 }
-document.write('<a href="javascript:openSupport(\'<?php echo $ims_siteid; ?>\',\'Welcome\');"><img src="http://status.imsupporting.com/status.php?siteid=<?php echo $ims_siteid; ?>&amp;style=<?php echo $ims_imageid; ?>&amp;docref='+docref+'" border="0" alt="live chat software" title="Launch live chat"/></a>');
+document.write('<a href="javascript:openSupport(\'<?php echo $ims_siteid; ?>\',\'Welcome\');"><img src="//status.imsupporting.com/status.php?siteid=<?php echo $ims_siteid; ?>&amp;style=<?php echo $ims_imageid; ?>&amp;docref='+docref+'" border="0" alt="live chat software" title="Launch live chat"/></a>');
 //-- Stop hiding script -->
 </SCRIPT>
-<noscript><a href="http://www.imsupporting.com" title="Live chat software" target="_blank">Live Chat software</a></noscript>
+<noscript><a href="http://www.imsupporting.com" title="Live chat software" target="_blank">Live Chat</a></noscript>
 </div>
 <?php 
 }
@@ -114,14 +114,14 @@ document.all.imsupportingchatpopup.style.visibility = 'visible';
 </script>
 
 <div id="imsupportingchatpopup" style="width:<?php echo $ims_popupwidth; ?>px; height:<?php echo $ims_popupheight; ?>px; position:absolute; left:<?php echo $ims_popupleft; ?>px; top: <?php echo $ims_popuptop; ?>px; z-index:9999999; background:url(<?php echo $ims_popupimage; ?>) no-repeat; visibility:hidden;  text-align: center;"><br>
-<script type="text/javascript" src="http://support1.imsupporting.com/welcome2/popup.js"></script>
+<script type="text/javascript" src="//support1.imsupporting.com/welcome2/popup.js"></script>
 <a href="javascript:openSupport('<?php echo $ims_siteid; ?>','Welcome');"><br>
 <span style="text-align: center"></span><br />
 <br />
-<img src="http://status.imsupporting.com/status.php?siteid=<?php echo $ims_siteid; ?>&style=<?php echo $ims_popupbutton; ?>" alt="Live chat" border="0" /></a>
+<img src="//status.imsupporting.com/status.php?siteid=<?php echo $ims_siteid; ?>&style=<?php echo $ims_popupbutton; ?>" alt="Live chat" border="0" /></a>
 <noscript><a href="http://www.imsupporting.com" title="Live chat">Live Chat</a></noscript>
 <a href="javascript:hidesupdiv();"><br />
-<img src="http://status.imsupporting.com/remotepopups/closewindow.png" width="116" border="0" height="24"></a>
+<img src="//status.imsupporting.com/remotepopups/closewindow.png" width="116" border="0" height="24"></a>
 <br>
 </div>
 <!-- End IMsupporting Chat Popup Code -->
