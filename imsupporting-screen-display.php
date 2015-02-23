@@ -59,7 +59,17 @@ if ($imx == "1") {
         }
 ?>
 <div style="<?php echo $ims_style; ?>">
-<script type="text/javascript" src="//support1.imsupporting.com/welcome2/popup.js"></script>
+<script type="text/javascript">
+// JavaScript Document
+var ref = encodeURIComponent(document.referrer);
+function openSupport(id,name)
+{
+supporturl = 'http://support1.imsupporting.com/welcome2/index.php?id='+id;
+// Open IMsupporting window.
+window.open(supporturl ,name,"toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=470px,height=400px");
+// End.
+}
+</script>
 <SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
 <!-- Hide script from older browsers - IMsupporting Plugin .28
 var docref = "noref";
