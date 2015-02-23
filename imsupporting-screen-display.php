@@ -32,12 +32,12 @@ echo "Siteid = $ims_siteid , ImageId = $ims_imageid , LeftCSS = $ims_leftcss , T
 
 // Style
 if ($ims_position == "left") {
-	// bottom left
-        $ims_style = 'bottom:0px; position:fixed; left:10px; overflow:visible; text-align:right; line-height:0; z-index:100000"';
+	// bottom left;
+        $ims_style = 'bottom:0px; position:fixed; left:10px; overflow:visible; text-align:right; line-height:0; z-index:100000;';
 }
 if ($ims_position == "right") {
 	// bottom right
-        $ims_style = 'bottom:0px; position:fixed; right:10px; overflow:visible; text-align:right; line-height:0; z-index:100000"';
+        $ims_style = 'bottom:0px; position:fixed; right:10px; overflow:visible; text-align:right; line-height:0; z-index:100000;';
 }
 if ($ims_position == "top") {
         $ims_style = 'top:0px; left:'.$ims_leftcss.'px; position:fixed; z-index:2000;';
