@@ -3,8 +3,8 @@ Contributors: IMsupporting
 Donate link: http://IMsupporting.com
 Tags: live chat, live chat plugin, live chat software, live support, live chat button, live support button, live chat support, chat widget, chat tool, live chat widget, live chat tool, chat, chat support, instant chat, chat free, chat live, instant chat, chat plugin, live chat plugin
 Requires at least: 3.0.1
-Tested up to: 4.2
-Stable tag: 3.8.0.30
+Tested up to: 4.3
+Stable tag: 3.8.0.31
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,7 +29,11 @@ Live chat can help increase sales and customer satisfaction by enabling you to c
 
 2. Click "settings" and follow the instructions.
 
-3. You now have a live chat account. Simply click login at IMsupporting.com and start chatting to your website visitors.
+3. Visit http://www.imsupporting.com and get a free chat account.
+
+4. Add your unique account ID to the plugin.
+
+5. Login to the chat console and start chatting t your website visitors.
 
 
 You will need an Account ID, This can be found in your welcome email OR Contact our support team for assistance.
@@ -61,6 +65,9 @@ Yes, you can customise the chat window entirely. Add your own banners and change
 
 
 == Changelog ==
+
+= 3.8.0.31 =
+* Tested live chat for WordPress version 4.3
 
 = 3.8.0.29 =
 * Updated to include local script rather than rely on external resources.

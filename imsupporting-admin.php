@@ -1,6 +1,6 @@
 <?php
 // Admin page
-// 2014 - IMsupporting.com - Coded by Gsmart Lead Operations
+// 2015 - IMsupporting.com - Coded by Gsmart Lead Operations
 
 if ( is_admin() ){
 
