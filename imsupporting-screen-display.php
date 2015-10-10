@@ -79,7 +79,7 @@ docref = document.referrer;
 document.write('<a href="javascript:openSupport(\'<?php echo $ims_siteid; ?>\',\'Welcome\');"><img src="//status.imsupporting.com/status.php?siteid=<?php echo $ims_siteid; ?>&amp;style=<?php echo $ims_imageid; ?>&amp;docref='+docref+'" border="0" alt="live chat software" title="Launch live chat"/></a>');
 //-- Stop hiding script -->
 </SCRIPT>
-<noscript><a href="http://www.imsupporting.com" title="Live chat software" target="_blank">Live Chat</a></noscript>
+<noscript><a href="http://www.imsupporting.com/get-live-chat-now-free-trial/" title="Live Chat Software" target="_blank">Live Chat Software</a></noscript>
 </div>
 <?php 
 }

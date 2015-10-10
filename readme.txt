@@ -3,8 +3,8 @@ Contributors: IMsupporting
 Donate link: http://IMsupporting.com
 Tags: live chat, live chat plugin, live chat software, live support, live chat button, live support button, live chat support, chat widget, chat tool, live chat widget, live chat tool, chat, chat support, instant chat, chat free, chat live, instant chat, chat plugin, live chat plugin
 Requires at least: 3.0.1
-Tested up to: 4.3
-Stable tag: 3.8.0.31
+Tested up to: 4.3.1
+Stable tag: 3.8.0.32
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,6 +65,9 @@ Yes, you can customise the chat window entirely. Add your own banners and change
 
 
 == Changelog ==
+
+= 3.8.0.32 =
+* Tested live chat plugin for WordPress version 4.3.1, Updated backend to support upcoming HTML5 screen share
 
 = 3.8.0.31 =
 * Tested live chat for WordPress version 4.3
